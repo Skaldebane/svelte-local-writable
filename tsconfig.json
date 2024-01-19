@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "ES2020",
+        "outDir": "dist",
+        "declaration": true,
+        "sourceMap": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true /* Skip type checking of declaration files. */,
+        "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
+        "moduleResolution": "node"
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.test.ts", "vite.config.ts"],
+    "typedocOptions": {
+        "entryPoints": ["src/index.ts"],
+        "excludeInternal": true,
+        "excludePrivate": true,
+        "excludeProtected": true,
+        "excludeExternals": true,
+        "includeVersion": true,
+        "name": "LiveKit JS Server SDK",
+        "out": "docs",
+        "theme": "default"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "name": "svelte-local-writable",
+    "version": "1.0.0",
+    "description": "Svelte-compatible writable store that persists to local storage.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": "git@github.com:Skaldebane/svelte-local-writable.git",
+    "author": "Houssam Elbadissi <skaldebane@gmail.com>",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc --project tsconfig.json",
+        "build:watch": "tsc --watch",
+        "build-docs": "typedoc",
+        "ci:publish": "npm run build && npm publish --access public",
+        "lint": "eslint .",
+        "format": "prettier --write src",
+        "format:check": "prettier --check src"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.5",
+        "@typescript-eslint/eslint-plugin": "^6.18.1",
+        "@typescript-eslint/parser": "^6.18.1",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.29.1",
+        "prettier": "^3.2.4",
+        "typedoc": "^0.25.7",
+        "typescript": "^5.3.3",
+        "svelte": "^4.2.9"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
