@@ -1,4 +1,4 @@
-# svelte-local-writable
+# [svelte-local-writable](https://www.npmjs.com/package/svelte-local-writable)
 Svelte-compatible writable store that persists to local storage.
 
 This package provides `LocalWritable`, a custom implementation of Svelte's `Writable` interface, that saves the value of the writable in `localStorage`.
